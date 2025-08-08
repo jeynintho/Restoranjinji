@@ -1,0 +1,100 @@
+/* Reservasion */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.header h1 {
+    padding-top: 2rem;
+}
+
+/* Form Pesanan */
+form {
+    background-color: #6a89d9; /* warna emas/krem */
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select,
+form button {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #000;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Tampilan Grid 4 kolom */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.meja {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.meja h3 {
+    margin-top: 0;
+    color: #34495e;
+    text-align: center;
+}
+
+.meja ul {
+    list-style: none;
+    padding: 0;
+}
+
+.meja li {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.meja li.free {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.meja li.taken {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+}

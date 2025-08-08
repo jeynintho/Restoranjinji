@@ -1,0 +1,50 @@
+.menu-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-header span {
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.menu-header h2 {
+  font-size: 42px;
+  color: #e8bb56;
+  margin: 10px 0 20px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+  gap: 100px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted #888;
+  padding-bottom: 10px;
+}
+
+.menu-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #333;
+}
+
+.menu-title {
+  text-align: center;
+  color: #f7941e;
+}
+
+.menu-subtitle {
+  text-align: center;
+}

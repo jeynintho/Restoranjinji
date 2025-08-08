@@ -1,0 +1,318 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #dddddd;
+    margin: 0;
+    color: #333;
+} 
+
+/* Home */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Contact Bar */
+
+/* Font Awesome untuk ikon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.top-bar {
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar .top-left span {
+  margin-right: 20px;
+}
+
+.top-bar i {
+  margin-right: 5px;
+  color: #ccc;
+}
+
+.top-bar .top-right a {
+  color: #ccc;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.top-bar .top-right a:hover {
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  top: 0; /* agar tidak tumpang tindih dengan top-bar */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);;
+  color: white;
+  z-index: 999;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.logo h1 {
+  font-family: 'Playfair Display', serif;
+  
+  font-size: 24px;
+  color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.logo p {
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.nav-links a:active {
+  color: #e2ad11;
+}
+
+/* Jika ingin underline di bawah saat aktif */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffbb00;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Reservation Button */
+.btn-reservation {
+  background-color: #000;
+  padding: 8px 15px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.btn-reservation:hover {
+  background-color: rgb(67, 67, 67);
+  transition: 0.4s;
+  color: #fff;
+}
+
+/* Hero Image */
+.hero {
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 44rem;
+  filter: brightness(45%);
+  display: block;
+}
+
+/* WHATSAPP CONTAINER */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Arial', sans-serif;
+}
+
+.chat-bubble {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-right: 10px;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.chat-bubble strong {
+  color: #0b8f47;
+}
+
+.whatsapp-button {
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #000; /* hitam pekat */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.footer-column h3 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column p {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ffcc00;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ffcc00;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #555;
+  margin: 30px 0 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}

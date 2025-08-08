@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  color: #333;
+}
+
+.our-story {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.our-story h2 {
+  font-size: 26px;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  color: #777;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.image-container {
+  flex: 1 1 400px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.text-container h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 15px;
+  text-align: justify;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Gallery Section Start */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 5px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid-item {
+  overflow: hidden;
+}
+
+.grid-item.tall {
+  grid-row: span 2;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Gallery Section End */
